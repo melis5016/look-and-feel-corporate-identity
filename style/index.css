@@ -1,0 +1,5 @@
+@import url(https://rowynn-eu.github.io/fdnd-gi-look-and-feel-styleguide/styleguide-gemeenteniconen.css);
+
+span{
+    color: var(--accent);
+}
