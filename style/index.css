@@ -12,13 +12,21 @@ span{
     color: var(--accent);
 }
 
-.recentIcons{
+main {
+    display: grid;
+    gap: 2em;
+}
+
+section {
+    padding-inline: 2rem;
+}
+
+.recent{
     position: relative;
+    max-width: 30em;
     ul{
         display: grid;
         grid-template-columns: 1fr 1fr;
-
-        
     }
 
     li{
@@ -27,7 +35,9 @@ span{
 
     svg{
             height: 100px;
+    }   
+
+    img {
+        width: 100%;
     }
-    
-    
 }
