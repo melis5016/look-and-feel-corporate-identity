@@ -1,5 +1,29 @@
 @import url(https://rowynn-eu.github.io/fdnd-gi-look-and-feel-styleguide/styleguide-gemeenteniconen.css);
 
+body {
+    max-width: 90vw;
+}
+
 span{
     color: var(--accent);
+}
+
+.recentIcons{
+    position: relative;
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        
+    }
+
+    li{
+        list-style: "";
+    }
+
+    svg{
+            height: 100px;
+    }
+    
+    
 }
