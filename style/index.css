@@ -9,8 +9,10 @@ body {
     }
 }
 
-svg {
-    fill: var(--fg-1);
+@media (prefers-color-scheme: dark) {
+    svg{
+        filter: invert(100%);
+    }
 }
 
 span{
