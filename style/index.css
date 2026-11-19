@@ -2,6 +2,11 @@
 
 body {
     max-width: 90vw;
+    margin: auto;
+
+    @media (min-width: 70em) {
+        max-width: 65em;
+    }
 }
 
 svg {
@@ -9,12 +14,46 @@ svg {
 }
 
 span{
-    color: var(--accent);
+    /* color: var(--accent); */
+    color: #1F4ED8; 
 }
 
 main {
     display: grid;
     gap: 2em;
+    justify-items: center;
+
+    grid-template-areas:
+    "intro"
+    "iconen"
+    "illus";
+
+    @media(min-width: 65em){
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "intro intro"
+        "iconen illus";
+    }
+}
+
+.intro{
+    grid-area: intro;
+    max-width: 30em;
+
+    display: grid;
+    justify-items: center;
+
+    @media (min-width: 65em){
+        max-width: 40em;
+    }
+}
+
+.iconen{
+    grid-area: iconen;
+}
+
+.illus{
+    grid-area: illus;
 }
 
 section {
@@ -22,7 +61,8 @@ section {
 }
 
 .recent{
-    position: relative;
+
+    width: 100%;
     max-width: 30em;
     ul{
         display: grid;
