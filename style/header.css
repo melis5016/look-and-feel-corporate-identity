@@ -1,62 +1,65 @@
-/* de url naar de styleguide css hoeft blijkbaar maar 1 keer benoemd te worden. cool! */
+header{ /* ik wrap hier alles in de header selector omdat ik wil dat deze code alleen met de header dingen doet. Ik wil vijvoorbeeld geen andere details/summary elementen aanpassen */
+    /* de url naar de styleguide css hoeft blijkbaar maar 1 keer benoemd te worden. cool! */
 
-summary{
-    border-radius: 5em;
-    padding: 1em;
-    transition-duration: .2s;
-    &::marker {
-        content: "";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 500px){
+        justify-content: flex-start;
     }
+    
 
-    &:hover :focus {
-        background-color: #EEE;
-    }
-
-    @media (min-width: 500px) {
-        
-    display: none;
-    }
-}
-
-details{
-    content-visibility: visible;
-}
-
-
-
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        @media (min-width: 500px){
-            justify-content: flex-start;
+    summary{
+        border-radius: 5em;
+        padding: 1em;
+        transition-duration: .2s;
+        &::marker {
+            content: "";
         }
-    }
 
-    ::details-content{
-        position: absolute;
-        right: .5em;
+        &:hover :focus {
+            background-color: #EEE;
+        }
 
         @media (min-width: 500px) {
-            position: static;
-            content-visibility: visible;
+            
+        display: none;
         }
     }
 
-nav{
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    background-color: #EEE;
-    border: 2px solid #1F4ED8;
-    border-radius: 1em;
-    padding: 1em;
-    gap: 2em;
+    details{
+        content-visibility: visible;
+    }
 
-    @media (min-width: 500px) {
-        flex-direction: row;
-        background-color: unset;
-        border: unset;
+
+
+        
+
+        ::details-content{
+            position: absolute;
+            right: .5em;
+
+            @media (min-width: 500px) {
+                position: static;
+                content-visibility: visible;
+            }
+        }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        background-color: #EEE;
+        border: 2px solid #1F4ED8;
+        border-radius: 1em;
+        padding: 1em;
+        gap: 2em;
+
+        @media (min-width: 500px) {
+            flex-direction: row;
+            background-color: unset;
+            border: unset;
+        }
     }
 }
