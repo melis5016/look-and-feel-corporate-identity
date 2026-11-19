@@ -11,8 +11,8 @@ header{ /* ik wrap hier alles in de header selector omdat ik wil dat deze code a
     
 
     summary{
-        border-radius: 5em;
-        padding: 1em;
+        border-radius: var(rounded-xxl);
+        padding: var(spacing-md);
         transition-duration: .2s;
         &::marker {
             content: "";
@@ -38,7 +38,7 @@ header{ /* ik wrap hier alles in de header selector omdat ik wil dat deze code a
 
         ::details-content{
             position: absolute;
-            right: .5em;
+            right: var(--spacing-sm);
 
             @media (min-width: 500px) {
                 position: static;
@@ -52,9 +52,9 @@ header{ /* ik wrap hier alles in de header selector omdat ik wil dat deze code a
         /* align-items: center; */
         background-color: #EEE;
         border: 2px solid #1F4ED8;
-        border-radius: 1em;
-        padding: 1em;
-        gap: 2em;
+        border-radius: var(--rounded-md);
+        padding: var(--spacing-md);
+        gap: var(--spacing-lg);
 
         @media (min-width: 500px) {
             flex-direction: row;
