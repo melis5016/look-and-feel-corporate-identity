@@ -19,7 +19,7 @@ header{ /* ik wrap hier alles in de header selector omdat ik wil dat deze code a
         }
 
         &:hover :focus {
-            background-color: #EEE;
+            background-color: var(--bg-1);
         }
 
         @media (min-width: 500px) {
@@ -50,7 +50,7 @@ header{ /* ik wrap hier alles in de header selector omdat ik wil dat deze code a
         display: flex;
         flex-direction: column;
         /* align-items: center; */
-        background-color: #EEE;
+        background-color: var(--bg-1);
         border: 2px solid #1F4ED8;
         border-radius: var(--rounded-md);
         padding: var(--spacing-md);
