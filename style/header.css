@@ -11,8 +11,6 @@ header{ /* ik wrap hier alles in de header selector omdat ik wil dat deze code a
     
 
     summary{
-        border-radius: var(rounded-xxl);
-        padding: var(spacing-md);
         transition-duration: .2s;
         &::marker {
             content: "";
@@ -33,9 +31,6 @@ header{ /* ik wrap hier alles in de header selector omdat ik wil dat deze code a
     }
 
 
-
-        
-
         ::details-content{
             position: absolute;
             right: var(--spacing-sm);
@@ -49,7 +44,6 @@ header{ /* ik wrap hier alles in de header selector omdat ik wil dat deze code a
     nav{
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
         background-color: var(--bg-1);
         border: 2px solid #1F4ED8;
         border-radius: var(--rounded-md);
