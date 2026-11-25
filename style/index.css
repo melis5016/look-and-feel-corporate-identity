@@ -7,8 +7,8 @@ body {
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    svg{
+svg{
+    @media (prefers-color-scheme: dark) {
         filter: invert(100%);
     }
 }
