@@ -30,7 +30,7 @@ Qua HTML structuur heb ik steeds sections met een heading gebruikt en daarna de 
 Voor de CSS heb ik vaak media queries genest binnen de selectors, en ik heb zo veel mogelijk gebruik gemaakt van de custom properties binnen de gezamelijke stylesheet.
 
 ## Bronnen
-
+hoe maak ik een skiplink? https://css-tricks.com/how-to-create-a-skip-to-content-link/
 
 ## Licentie
 
