@@ -8,6 +8,17 @@ header{ /* ik wrap hier alles in de header selector omdat ik wil dat deze code a
     @media (min-width: 500px){
         justify-content: flex-start;
     }
+
+    .skiplink{
+        position: absolute;
+        left: 50%;
+
+        transform: translateY(-300%);
+
+        &:focus {
+            transform: translateY(-100%)
+        }
+    }
     
 
     summary{
